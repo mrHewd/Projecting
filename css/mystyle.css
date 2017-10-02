@@ -1,0 +1,50 @@
+                        .index-top-title {
+                            text-align: center;
+                        }
+                        .index-top-block {
+                            background: #FAFAF5;
+                            margin-bottom: 20px;
+                            padding: 30px 0;
+                            overflow: hidden;
+                        }
+                        .index-top-list {
+                            margin-top: 24px;
+                        }
+                        .index-top-item {               
+                            width: 20%;
+                        }           
+                        .ul-justify > li.index-top-item {
+                            text-align: center;
+                            text-align-last: center;
+                        }
+                        .index-top-block-text {
+                            color: #595959;
+                            display: inline-block;
+                            font: 15px/20px PTSans,Tahoma,Sans-Serif;
+                            margin-top: 5px;
+                        }
+                        .index-top-item-text {
+                            width:15%;
+                            max-width: 142px;
+                        }
+                        .index-top-block-icon {
+                            display: block;
+                            height: 50px;
+                            width: 100%;
+                        }           
+                        .index-top-block-icon-shop {
+                            background: url(https://img.labirint.ru/design/index-shop.svg) 
+                                no-repeat center center;
+                        }           
+                        .index-top-block-icon-courier {
+                            background: url(https://img.labirint.ru/design/index-courier.svg) 
+                                no-repeat center center;
+                        }           
+                        .index-top-block-icon-self {
+                            background: url(https://img.labirint.ru/design/index-self.svg) 
+                                no-repeat center center;
+                        }            
+                        .index-top-block-icon-gift {
+                            background: url(https://img.labirint.ru/design/index-gift.svg) 
+                                no-repeat center center;
+                        }

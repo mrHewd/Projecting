@@ -1,0 +1,7 @@
+H1 { font-size: 24px; color: black }
+body { margin: 20; background-color: lightgray; }
+.btn {
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
