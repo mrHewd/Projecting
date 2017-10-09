@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Книжный интернет-магазин</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <title>Книжный интернет-магазин: купить книги, новинки, бестселлеры</title>
         <link rel="stylesheet" type="text/css" 
@@ -194,11 +194,11 @@ and open the template in the editor.
                                     <div id="left" class="bl-left bl-left-main">
                                         <div class="bl-left-col bl-left-margin bl-left-getemail">
                                             <form class="form-getemail-checkout" method="post">
-                                                <div class="getemail-main-left-content">
-                                                    <input type="text" name="email" class="getemail-form-input js-getemail" placeholder="Ваша почта">
+                                                <div class="getemail-main-left-btn-outer">
+                                                    <span class="getemail-btn btn btn-small btn-clear-blue" onclick="location.href='Authorisation';">Авторизация</span>
                                                 </div>
                                                 <div class="getemail-main-left-btn-outer">
-                                                    <span class="getemail-btn btn btn-small btn-clear-blue btn-disabled">Получить купон</span>
+                                                    <span class="getemail-btn btn btn-small btn-clear-blue" onclick="location.href='Registration';">Регистрация</span>
                                                 </div>
                                             </form>
                                         </div>
