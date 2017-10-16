@@ -10,11 +10,13 @@ and open the template in the editor.
         <title>Книжный интернет-магазин</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-        <title>Книжный интернет-магазин: купить книги, новинки, бестселлеры</title>
         <link rel="stylesheet" type="text/css" 
               href="https://css.labirint.ru/content-min.css?1505995665" media="screen">
-    
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/my_scripts.js"></script>
     </head>
+
+
     <body id="body-top">
         <div id="minwidth" class="body-main-content">
 
@@ -78,11 +80,11 @@ and open the template in the editor.
 				
 					
 
-									<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="196" height="30" style="max-width:100%" text-anchor="start">
-	<image href="https://demiart.ru/forum/uploads2/post-93537-1234807549.jpg"width="80%" height="120%"></image>
+									<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="70" style="max-width:100%" text-anchor="start">
+	<image href="https://st2.depositphotos.com/1020070/8352/v/950/depositphotos_83522830-stock-illustration-stack-of-books-with-bookmarks.jpg" width="150" height="90"></image>
 </svg>					</span>
 								<div class="header-logo-txt">
-                                                                    <h2>Интернет-магазин</h2>				</div>
+                                                                    <h1>Интернет-магазин</h1>				</div>
 			</div>
 		</div>
 	</div>
@@ -125,6 +127,7 @@ and open the template in the editor.
                                 <a class="soc-icon-gray soc-icon-fb"></a>
                                 <a class="soc-icon-gray soc-icon-in"></a>
                             </li>
+                            ::after
                         </ul>
                     </div>
                 </div>	
@@ -184,7 +187,6 @@ and open the template in the editor.
                 
                 
                 
-                
                 <div id="maxwidth" class="max-width">
                     <div id="outer">
                         <div id="wrapper">
@@ -192,16 +194,6 @@ and open the template in the editor.
                                 <div id="inner" class="bl-inner bl-content">
 
                                     <div id="left" class="bl-left bl-left-main">
-                                        <div class="bl-left-col bl-left-margin bl-left-getemail">
-                                            <form class="form-getemail-checkout" method="post">
-                                                <div class="getemail-main-left-btn-outer">
-                                                    <span class="getemail-btn btn btn-small btn-clear-blue" onclick="location.href='Authorisation';">Авторизация</span>
-                                                </div>
-                                                <div class="getemail-main-left-btn-outer">
-                                                    <span class="getemail-btn btn btn-small btn-clear-blue" onclick="location.href='Registration';">Регистрация</span>
-                                                </div>
-                                            </form>
-                                        </div>
                                         <div class="bl-left-col bl-left-margin bl-left-payments">
                                             <div class="single-block-left-outer payments-block">
                                                 <div class="single-block-left">
@@ -217,7 +209,185 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="bl-left-col bl-left-margin bl-left-getemail">
+                                            <form class="form-getemail-checkout" action="check.php" method="post">
+                                                <script type="text/javascript">
+                                                    function show(state) {
+                                                        
+                                                            document.getElementById('windowAuth').style.display = state;            
+                                                            document.getElementById('wrap').style.display = state;          
+                                                    }
+                                                </script>
+
+                                                <div onclick="show('none')" id="wrap"></div>
+
+                                                <div id="windowAuth">
+                                                    <style type="text/css">
+                                                    /*Общий стиль*/
+                                                    #subscribe,
+                                                    #login{
+                                                        top: 0px;
+                                                        width: 88%;
+                                                        padding: 18px 6% 60px 6%;
+                                                        margin: 0 0 35px 0;
+                                                    }
+                                                    /*Стили для шапки*/
+                                                    #wrapper h1{
+                                                        font-size: 48px;
+                                                        color: rgb(6, 106, 117);
+                                                        padding: 2px 0 10px 0;
+                                                        font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+                                                        font-weight: bold;
+                                                        text-align: center;
+                                                        padding-bottom: 30px;
+                                                    }
+                                                    /*Стили для полей для заполнения*/
+                                                    ::-webkit-input-placeholder  {
+                                                        color: rgb(190, 188, 188);
+                                                        font-style: italic;
+                                                    }
+                                                    input:-moz-placeholder,
+                                                    textarea:-moz-placeholder{
+                                                        color: rgb(190, 188, 188);
+                                                        font-style: italic;
+                                                    }
+                                                    input {
+                                                      outline: none;
+                                                    }
+                                                    #wrapper input:not([type="checkbox"]){
+                                                        width: 92%;
+                                                        margin-top: 4px;
+                                                        padding: 10px 5px 10px 32px;
+                                                        border: 1px solid rgb(178, 178, 178);
+                                                        box-sizing : content-box;
+                                                        border-radius: 3px;
+                                                        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+                                                        transition: all 0.2s linear;
+                                                    }
+                                                    #wrapper input:not([type="checkbox"]):active,
+                                                    #wrapper input:not([type="checkbox"]):focus{
+                                                        border: 1px solid rgba(91, 90, 90, 0.7);
+                                                        background: rgba(238, 236, 240, 0.2);
+                                                        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+                                                    }
+                                                    /*Стили для кнопок*/
+                                                    #wrapper p.button input{
+                                                        width: 30%;
+                                                        cursor: pointer;
+                                                        background: rgb(61, 157, 179);
+                                                        padding: 8px 5px;
+                                                        font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+                                                        color: #fff;
+                                                        font-size: 24px;
+                                                        border: 1px solid rgb(28, 108, 122);
+                                                        margin-bottom: 10px;
+                                                        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+                                                        border-radius: 3px;
+                                                        box-shadow:
+                                                            0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+                                                            0px 0px 0px 3px rgb(254, 254, 254),
+                                                            0px 5px 3px 3px rgb(210, 210, 210);
+                                                        transition: all 0.2s linear;
+                                                    }
+                                                    #wrapper p.button input:hover{
+                                                        background: rgb(74, 179, 198);
+                                                    }
+                                                    #wrapper p.button input:active,
+                                                    #wrapper p.button input:focus{
+                                                        background: rgb(40, 137, 154);
+                                                        position: relative;
+                                                        top: 1px;
+                                                        border: 1px solid rgb(12, 76, 87);
+                                                        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+                                                    }
+                                                    </style>
+                                                    <!-- Картинка крестика-->
+                                                    <img class="close" onclick="show('none')" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">
+                                                    <div id="container">
+                                                        <div id="wrapper">
+                                                            <div id="login">
+                                                                <form>
+                                                                    <h1>Авторизация</h1>
+                                                                    <p>
+                                                                        <label class="uname" data-icon="u">Введите EMail</label>
+                                                                        <input id="email" name="email" required="required" type="text" placeholder="Mymail@mail.com" method="post"/>
+                                                                    </p>
+                                                                    <?php
+
+                                                                    ?>
+                                                                    <p>
+                                                                        <label class="youpasswd" data-icon="p">Введите пароль</label>
+                                                                        <input id="password" name="password" required="required" type="password" placeholder="Password"/>
+                                                                    </p>
+                                                                    <p class="keeplogin">
+                                                                        <br>
+                                                                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                                                                        <label for="loginkeeping">Запомните меня</label>
+                                                                    </p>
+                                                                    <input type="submit" value="Войти" onclick=""/>
+                                                                    <br>
+                                                                    <input type="submit" value="Проверка"/>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                                <style type="text/css">
+    
+                                                    #wrap{
+                                                        display: none;
+                                                        opacity: 0.8;
+                                                        position: fixed;
+                                                        left: 0;
+                                                        right: 0;
+                                                        top: 0;
+                                                        bottom: 0;
+                                                        padding: 16px;
+                                                        background-color: rgba(1, 1, 1, 0.725);
+                                                        z-index: 100;
+                                                        overflow: auto;
+                                                    }
+                                                    
+                                                    #windowAuth{
+                                                        width: 400px;
+                                                        height: 420px;
+                                                        margin: 50px auto;
+                                                        display: none;
+                                                        background: #fff;
+                                                        z-index: 200;
+                                                        position: fixed;
+                                                        left: 0;
+                                                        right: 0;
+                                                        top: 0;
+                                                        bottom: 0;
+                                                        padding: 16px;
+                                                    }
+                                                    
+                                                    .close{
+                                                        margin-left: 364px;
+                                                        margin-top: 4px;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                </style>
+
+
+
+
+
+                                                <div class="getemail-main-left-btn-outer">
+                                                    <span class="getemail-btn btn btn-small btn-clear-blue" onclick="show('block')">Авторизация</span>
+                                                </div>
+                                            </form>
+
+                                        </div>
                                     </div>
+
+
 
                                     <div id="right" class="bl-right bl-right-main">
                                         <div id="right-inner"><div class="banners">
@@ -378,14 +548,6 @@ and open the template in the editor.
                                                                                     <a class="btn buy-link btn-primary" id="buy606082" onclick="shopingnew(606082, 0, 0); return false;">
                                                                                         В КОРЗИНУ		</a>
                                                                                 </div>	
-                                                                                <div class="fleft product-icons-outer">
-                                                                                    <div class="product-icons">
-                                                                                        <div class="product-icons-inner">
-                                                                                            <a id="comp606082" class="compare" data-idtov="606082" onclick="return compare(606082, -1);" rel="nofollow" title="Сравнить"></a>
-                                                                                            <a class="fave nopstate" data-idtov="606082" sendto="registration" onclick="return false;" rel="nofollow" title="В отложенные"></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
                                                                             </div>
                                                                         </div>	
                                                                     </div>
