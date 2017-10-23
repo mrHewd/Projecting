@@ -337,7 +337,16 @@ and open the template in the editor.
 
 
                                                 <style type="text/css">
-    
+                                                    table {
+                                                        width: 50%;
+                                                        background: white;
+                                                        color: white; 
+                                                        border-spacing: 1px;
+                                                    }
+                                                       td, th {
+                                                        background: maroon;
+                                                        padding: 5px;
+                                                    }
                                                     #wrap{
                                                         display: none;
                                                         opacity: 0.8;
@@ -473,257 +482,73 @@ and open the template in the editor.
                                             
                                             <div class="main-block-carousel bestsellers" data-jcarousel="true">
                                                 <div class="h2 mt20 relative main-block-carousel-title-outer" style="margin-bottom: 20px;">
-                                                    <a class="block-link-title">Что почитать: выбор редакции</a>
-                                                </div><div class="jcarousel-items" style="width: 500%; left: 0px; top: 0px;"><div class="jcarousel-item" style="width:20%;"><div class="products-row-outer">
-                                                            <div class="products-row ov-hidden rows1">
-                                                                <div class="product " data-product-id="605447" data-metkascreenshot="1" data-dir="books" data-incompare="" data-inputorder="" data-inbasket="" data-sgenre="-1" data-maingenre="2522">
-                                                                    <div class="product-padding">
-                                                                        <div class="product-cover product-cover-long">
-                                                                            <a rel="nofollow" class="action-label action-label_minicard action-label_red">
-                                                                                <span class="action-label__text">25<span class="action-label__space">&nbsp;</span>%</span>
-                                                                            </a>
-                                                                            <a class="cover" title="Яир Лапид - Мои посмертные воспоминания. История жизни Йосефа &quot;Томи&quot; Лапида">
-                                                                                <span class="relative">
-                                                                                    <img src="https://img1.labirint.ru/books61/605447/covermid.jpg" class="book-img-cover" alt="Яир Лапид - Мои посмертные воспоминания. История жизни Йосефа &quot;Томи&quot; Лапида обложка книги" title="Яир Лапид - Мои посмертные воспоминания. История жизни Йосефа &quot;Томи&quot; Лапида обложка книги" style="display: block;">		</span>
-                                                                                <span class="product-title large-name">Воспоминания Томи Лапида, которые читаются как детектив</span>
-                                                                            </a>
-                                                                            <span class="product-hint lazyloaded" style="display: block; top: 0px;">
-                                                                                <a onclick="return screenshot(this);"><span>1</span> фото</a>		<span class="tip"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="product-buy-area">
-                                                                            <div class="product-pricing">
-                                                                                <div class="price">
-                                                                                    <span class="price-old"><span class="price-gray">680</span></span>
-                                                                                    <span class="price-val" title="Цена со скидкой">
-                                                                                        <span>510</span> р.
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="product-buy-margin">
-                                                                                <div class="product-buy buy-avaliable fleft">
-                                                                                    <a class="btn buy-link btn-primary" id="buy605447" onclick="shopingnew(605447, 0, 0); return false;">
-                                                                                        В КОРЗИНУ		</a>
-                                                                                </div>	
-                                                                                <div class="fleft product-icons-outer">
-                                                                                    <div class="product-icons">
-                                                                                        <div class="product-icons-inner">
-                                                                                            <a id="comp605447" class="compare" data-idtov="605447" onclick="return compare(605447, -1);" rel="nofollow" title="Сравнить"></a>
-                                                                                            <a class="fave nopstate" data-idtov="605447" onclick="return false;" rel="nofollow" title="В отложенные"></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>	
-                                                                    </div>
-                                                                </div>
-                                                                <div class="product " data-product-id="606082" data-metkascreenshot="1" data-dir="books" data-incompare="" data-inputorder="" data-inbasket="" data-sgenre="-1" data-maingenre="2524">
-                                                                    <div class="product-padding">
-                                                                        <div class="product-cover product-cover-long">
-                                                                            <a rel="nofollow" class="action-label action-label_minicard action-label_red">
-                                                                                <span class="action-label__text">25<span class="action-label__space">&nbsp;</span>%</span>
-                                                                            </a>
-                                                                            <a class="cover" title="Фрай, Тренд - Новая чайная книга">
-                                                                                <span class="relative">
-                                                                                    <img src="https://img2.labirint.ru/books61/606082/covermid.jpg" class="book-img-cover" alt="Фрай, Тренд - Новая чайная книга обложка книги" title="Фрай, Тренд - Новая чайная книга обложка книги" style="display: block;">		</span>
-
-                                                                                <span class="product-title large-name">Сборник рассказов о том, как, где и с кем пить чай</span>
-                                                                            </a>
-                                                                            <span class="fader"></span>
-                                                                            <span class="product-hint lazyloaded" style="display: block; top: 0px;">
-                                                                                <a><span>5</span> рец.</a><br>		<a><span>27</span> фото</a>		<span class="tip"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="product-buy-area">
-                                                                            <div class="product-pricing">
-                                                                                <div class="price">
-                                                                                    <span class="price-old"><span class="price-gray">367</span></span>
-                                                                                    <span class="price-val" title="Цена со скидкой">
-                                                                                        <span>275</span> р.
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="product-buy-margin">
-                                                                                <div class="product-buy buy-avaliable fleft">
-                                                                                    <a class="btn buy-link btn-primary" id="buy606082" onclick="shopingnew(606082, 0, 0); return false;">
-                                                                                        В КОРЗИНУ		</a>
-                                                                                </div>	
-                                                                            </div>
-                                                                        </div>	
-                                                                    </div>
-                                                                </div>
-                                                                <div class="product " data-product-id="535236" data-metkascreenshot="1" data-dir="books" data-incompare="" data-inputorder="" data-inbasket="" data-sgenre="-1" data-maingenre="2344">
-                                                                    <div class="product-padding">
-                                                                        <div class="product-cover product-cover-long">
-                                                                            <a rel="nofollow" class="action-label action-label_minicard action-label_red">
-                                                                                <span class="action-label__text">25<span class="action-label__space">&nbsp;</span>%</span>
-                                                                            </a>
-                                                                            <a class="cover" title="Коуз, Ван - Как Китай стал капиталистическим">
-                                                                                <span class="relative">
-                                                                                    <img src="https://img2.labirint.ru/books54/535236/covermid.jpg" class="book-img-cover" alt="Коуз, Ван - Как Китай стал капиталистическим обложка книги" title="Коуз, Ван - Как Китай стал капиталистическим обложка книги" style="display: block;">		</span>
-                                                                                <span class="product-title large-name">Нобелиат Рональд Коуз рассказывает важное об экономике Китая</span>
-                                                                            </a>
-                                                                            <span class="fader"></span>
-                                                                            <span class="product-hint lazyloaded" style="display: block; top: 0px;">
-                                                                                <a onclick="return screenshot(this);"><span>1</span> фото</a>		<span class="tip"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="product-buy-area">
-                                                                            <div class="product-pricing">
-                                                                                <div class="price">
-                                                                                    <span class="price-old"><span class="price-gray">557</span></span>
-                                                                                    <span class="price-val" title="Цена со скидкой">
-                                                                                        <span>418</span> р.
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="product-buy-margin">
-                                                                                <div class="product-buy buy-avaliable fleft">
-                                                                                    <a class="btn buy-link btn-primary" id="buy535236" onclick="shopingnew(535236, 0, 0); return false;" data-carttext="">
-                                                                                        В КОРЗИНУ		</a>
-                                                                                </div>	
-                                                                                <div class="fleft product-icons-outer">
-                                                                                    <div class="product-icons">
-                                                                                        <div class="product-icons-inner">
-                                                                                            <a id="comp535236" class="compare" data-idtov="535236" onclick="return compare(535236, -1);" rel="nofollow" title="Сравнить"></a>
-                                                                                            <a class="fave nopstate" data-idtov="535236" sendto="registration" onclick="return false;" rel="nofollow" title="В отложенные"></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>	
-                                                                    </div>
-                                                                </div>
-                                                                <div class="product " data-product-id="600585" data-metkascreenshot="1" data-dir="books" data-incompare="" data-inputorder="" data-inbasket="" data-sgenre="-1" data-maingenre="2530">
-                                                                    <div class="product-padding">
-                                                                        <div class="product-cover product-cover-long">
-                                                                            <a rel="nofollow" class="action-label action-label_minicard action-label_red">
-                                                                                <span class="action-label__text">20<span class="action-label__space">&nbsp;</span>%</span>
-                                                                            </a>
-                                                                            <a class="cover" title="Джоанн Харрис - Другой класс">
-                                                                                <span class="relative">
-                                                                                    <img src="https://img1.labirint.ru/books61/600585/covermid.jpg" class="book-img-cover" alt="Джоанн Харрис - Другой класс обложка книги" title="Джоанн Харрис - Другой класс обложка книги" style="display: block;">		</span>
-                                                                                <span class="product-title large-name">Новый роман Джоанн Харрис о скелетах в школьном шкафу</span>
-                                                                            </a>
-                                                                            <span class="fader"></span>
-                                                                            <span class="product-hint lazyloaded" style="display: block; top: 0px;">
-                                                                                <a><span>1</span> рец.</a><br>		<a onclick="retuhrefrn screenshot(this);"><span>20</span> фото</a>		<span class="tip"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="product-buy-area">
-                                                                            <div class="product-pricing">
-                                                                                <div class="price">
-                                                                                    <span class="price-old"><span class="price-gray">551</span></span>
-                                                                                    <span class="price-val" title="Цена со скидкой">
-                                                                                        <span>441</span> р.
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="product-buy-margin">
-                                                                                <div class="product-buy buy-avaliable fleft">
-                                                                                    <a class="btn buy-link btn-primary" id="buy600585" onclick="shopingnew(600585, 0, 0); return false;" data-carttext="">
-                                                                                        В КОРЗИНУ		</a>
-                                                                                </div>	
-                                                                                <div class="fleft product-icons-outer">
-                                                                                    <div class="product-icons">
-                                                                                        <div class="product-icons-inner">
-                                                                                            <a id="comp600585" class="compare" data-idtov="600585" onclick="return compare(600585, -1);" rel="nofollow" title="Сравнить"></a>
-                                                                                            <a class="fave nopstate" data-idtov="600585" sendto="registration" onclick="return false;" rel="nofollow" title="В отложенные"></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>	
-                                                                    </div>
-                                                                </div>
-                                                                <div class="product " data-product-id="595444" data-metkascreenshot="1" data-dir="books" data-incompare="" data-inputorder="" data-inbasket="" data-sgenre="-1" data-maingenre="968">
-                                                                    <div class="product-padding">
-                                                                        <div class="product-cover product-cover-long">
-                                                                            <a rel="nofollow" class="action-label action-label_minicard action-label_red">
-                                                                                <span class="action-label__text">23<span class="action-label__space">&nbsp;</span>%</span>
-                                                                            </a>
-                                                                            <a class="cover" title="Бодлер, Маро - Французский сонет">
-                                                                                <span class="relative">
-                                                                                    <img src="https://img2.labirint.ru/books60/595444/covermid.jpg" class="book-img-cover" alt="Бодлер, Маро - Французский сонет обложка книги" title="Бодлер, Маро - Французский сонет обложка книги" style="display: block;">		</span>
-
-                                                                                <span class="product-title large-name">Совершенная форма. Поль Верлен и еще пятьдесят французов</span>
-                                                                            </a>
-                                                                            <span class="product-hint lazyloaded" style="display: block; top: 0px;">
-                                                                                <a><span>2</span> рец.</a><br>		<a onclick="return screenshot(this);"><span>28</span> фото</a>		<span class="tip"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="product-buy-area">
-                                                                            <div class="product-pricing">
-                                                                                <div class="price">
-                                                                                    <span class="price-old"><span class="price-gray">420</span></span>
-                                                                                    <span class="price-val" title="Цена со скидкой">
-                                                                                        <span>323</span> р.
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="product-buy-margin">
-                                                                                <div class="product-buy buy-avaliable fleft">
-                                                                                    <a class="btn buy-link btn-primary" id="buy595444" onclick="shopingnew(595444, 0, 0); return false;" data-carttext="">
-                                                                                        В КОРЗИНУ		</a>
-                                                                                </div>	
-                                                                                <div class="fleft product-icons-outer">
-                                                                                    <div class="product-icons">
-                                                                                        <div class="product-icons-inner">
-                                                                                            <a id="comp595444" class="compare" data-idtov="595444" onclick="return compare(595444, -1);" rel="nofollow" title="Сравнить"></a>
-                                                                                            <a class="fave nopstate" data-idtov="595444" sendto="registration" onclick="return false;" rel="nofollow" title="В отложенные"></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>	
-                                                                    </div>
-                                                                </div>
-                                                                <div class="product " data-product-id="607564" data-metkascreenshot="1" data-dir="books" data-incompare="" data-inputorder="" data-inbasket="" data-sgenre="-1" data-maingenre="2554">
-                                                                    <div class="product-padding">
-                                                                        <div class="product-cover product-cover-long">
-                                                                            <a rel="nofollow" class="action-label action-label_minicard action-label_red">
-                                                                                <span class="action-label__text">25<span class="action-label__space">&nbsp;</span>%</span>
-                                                                            </a>
-                                                                            <a class="cover" title="Андрей Белянин - Четырнадцатый апостол (стихотворения разных лет)">
-                                                                                <span class="relative">
-                                                                                    <img src="https://img2.labirint.ru/books61/607564/covermid.jpg" class="book-img-cover" alt="Андрей Белянин - Четырнадцатый апостол (стихотворения разных лет) обложка книги" title="Андрей Белянин - Четырнадцатый апостол (стихотворения разных лет) обложка книги" style="display: block;">		</span>
-
-                                                                                <span class="product-title large-name">Андрей Белянин в своей лирической ипостаси</span>
-                                                                            </a>
-                                                                            <span class="fader"></span>
-                                                                            <span class="product-hint lazyloaded" style="display: block; top: 0px;">
-                                                                                <a><span>1</span> рец.</a><br>		<a onclick="return screenshot(this);"><span>1</span> фото</a>		<span class="tip"></span>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="product-buy-area">
-                                                                            <div class="product-pricing">
-                                                                                <div class="price">
-                                                                                    <span class="price-old"><span class="price-gray">347</span></span>
-                                                                                    <span class="price-val" title="Цена со скидкой">
-                                                                                        <span>260</span> р.
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="product-buy-margin">
-                                                                                <div class="product-buy buy-avaliable fleft">
-                                                                                    <a class="btn buy-link btn-primary" id="buy607564" onclick="shopingnew(607564, 0, 0); return false;" data-carttext="">
-                                                                                        В КОРЗИНУ		</a>
-                                                                                </div>	
-                                                                                <div class="fleft product-icons-outer">
-                                                                                    <div class="product-icons">
-                                                                                        <div class="product-icons-inner">
-                                                                                            <a id="comp607564" class="compare" data-idtov="607564" onclick="return compare(607564, -1);" rel="nofollow" title="Сравнить"></a>
-                                                                                            <a class="fave nopstate" data-idtov="607564" sendto="registration" onclick="return false;" rel="nofollow" title="В отложенные"></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>	
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div><div class="jcarousel-item" style="width:20%;" data-target="1" data-empty="1" data-block="f48a525d4fc05f5c684670f799152283"></div><div class="jcarousel-item" style="width:20%;" data-target="2" data-empty="1" data-block="f48a525d4fc05f5c684670f799152283"></div><div class="jcarousel-item" style="width:20%;" data-target="3" data-empty="1" data-block="f48a525d4fc05f5c684670f799152283"></div><div class="jcarousel-item" style="width:20%;" data-target="4" data-empty="1" data-block="f48a525d4fc05f5c684670f799152283"></div></div></div> 
+                                                    <!-- <a class="block-link-title">Что почитать: выбор редакции</a> -->
+                                                </div>
+                                                    <a class="mm-link mm-link-big">Все книги: </a>                    
+                                                    <select class="mm-link">
+                                                        <?php
+                                                            $hostname = 'localhost';
+                                                            $username = 'root';
+                                                            $password = '';
+                                                            $database = 'bookshop';
+                                                            $con=mysqli_connect($hostname, $username, $password, $database);
+                                                            mysqli_query($con, "SET NAMES 'utf8' ");
+                                                            if (!$con)
+                                                            {
+                                                                echo "<option>"."Соединение нарушено"."</option>";
+                                                            }
+                                                            $query = "SELECT book.name FROM book";
+                                                            
+                                                            $result = mysqli_query($con, $query);
+                                                            if ($result->num_rows > 0) {
+                                                                while($row = $result->fetch_assoc()) {
+                                                                    echo "<option>".$row['name']."</option>";
+                                                                }
+                                                            } else {
+                                                                echo "<option>"."0 results"."</option>";
+                                                            }
+                                                            $con->close();
+                                                        ?>
+                                                    </select>
+                                                    </a> 
+                                                    <table border="1">
+                                                       <?php
+                                                            $hostname = 'localhost';
+                                                            $username = 'root';
+                                                            $password = '';
+                                                            $database = 'bookshop';
+                                                            $con=mysqli_connect($hostname, $username, $password, $database);
+                                                            mysqli_query($con, "SET NAMES 'utf8' ");
+                                                            if (!$con)
+                                                            {
+                                                                echo "<tr><td>"."Соединение нарушено"."</td></tr>";
+                                                            }
+                                                            $query1 = "SELECT book.name, book.author FROM book WHERE author = 'А. и Б. Стругацкие'";
+                                                            $query2 = "SELECT book.name, book.author FROM book WHERE author = 'Лермонтов'";
+                                                            
+                                                            $result1 = mysqli_query($con, $query1);
+                                                            $result2 = mysqli_query($con, $query2);
+                                                            $row1 = $result1->fetch_assoc();
+                                                            $row2 = $result2->fetch_assoc();
+                                                            echo "<tr><th>".$row1['author']."</th><th>".$row2['author']."</th></tr>";
+                                                            echo "<tr><td>".$row1['name']."</td><td>".$row2['name']."</td></tr>";
+                                                            
+                                                            if ($result1->num_rows > 0) {
+                                                                echo "<tr>";
+                                                                while($row1 = $result1->fetch_assoc()) {
+                                                                    echo "<td>".$row1['name']."</td>";
+                                                                }
+                                                                while($row2 = $result2->fetch_assoc()) {
+                                                                    echo "<td>".$row2['name']."</td>";
+                                                                }
+                                                                echo "</tr>";
+                                                            } else {
+                                                                echo "<option>"."0 результатов"."</option>";
+                                                            }
+                                                            $con->close();
+                                                        ?>
+                                                     </table>
+                                                </div> 
 
                                             <div id="bottom" class="mt20 w90p content-little">
                                                 <h2>Интернет-магазин книг в деталях</h2>
@@ -739,8 +564,8 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>
-                    </div>	
-                </div>	
+                    </div>  
+                </div>  
                 
                 
                 
