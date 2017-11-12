@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript" src="js/vue.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/authstyle.css">
 </HEAD>
 <body id="body-top" onload="init()">
     <div id="minwidth" class="body-main-content">
@@ -206,7 +207,6 @@
                                 <form class="form-getemail-checkout" action="check.php" method="post">
                                     <script type="text/javascript">
                                         function show(state) {
-
                                             document.getElementById('windowAuth').style.display = state;            
                                             document.getElementById('wrap').style.display = state;          
                                         }
@@ -215,85 +215,6 @@
                                     <div onclick="show('none')" id="wrap"></div>
 
                                     <div id="windowAuth">
-                                        <style type="text/css">
-                                            /*Общий стиль*/
-                                            #subscribe,
-                                            #login{
-                                                top: 0px;
-                                                width: 88%;
-                                                padding: 18px 6% 60px 6%;
-                                                margin: 0 0 35px 0;
-                                            }
-                                            /*Стили для шапки*/
-                                            #wrapper h1{
-                                                font-size: 48px;
-                                                color: rgb(6, 106, 117);
-                                                padding: 2px 0 10px 0;
-                                                font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
-                                                font-weight: bold;
-                                                text-align: center;
-                                                padding-bottom: 30px;
-                                            }
-                                            /*Стили для полей для заполнения*/
-                                            ::-webkit-input-placeholder  {
-                                                color: rgb(190, 188, 188);
-                                                font-style: italic;
-                                            }
-                                            input:-moz-placeholder,
-                                            textarea:-moz-placeholder{
-                                                color: rgb(190, 188, 188);
-                                                font-style: italic;
-                                            }
-                                            input {
-                                              outline: none;
-                                          }
-                                          #wrapper input:not([type="checkbox"]){
-                                            width: 92%;
-                                            margin-top: 4px;
-                                            padding: 10px 5px 10px 32px;
-                                            border: 1px solid rgb(178, 178, 178);
-                                            box-sizing : content-box;
-                                            border-radius: 3px;
-                                            box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-                                            transition: all 0.2s linear;
-                                        }
-                                        #wrapper input:not([type="checkbox"]):active,
-                                        #wrapper input:not([type="checkbox"]):focus{
-                                            border: 1px solid rgba(91, 90, 90, 0.7);
-                                            background: rgba(238, 236, 240, 0.2);
-                                            box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
-                                        }
-                                        /*Стили для кнопок*/
-                                        #wrapper p.button input{
-                                            width: 30%;
-                                            cursor: pointer;
-                                            background: rgb(61, 157, 179);
-                                            padding: 8px 5px;
-                                            font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
-                                            color: #fff;
-                                            font-size: 24px;
-                                            border: 1px solid rgb(28, 108, 122);
-                                            margin-bottom: 10px;
-                                            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-                                            border-radius: 3px;
-                                            box-shadow:
-                                            0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-                                            0px 0px 0px 3px rgb(254, 254, 254),
-                                            0px 5px 3px 3px rgb(210, 210, 210);
-                                            transition: all 0.2s linear;
-                                        }
-                                        #wrapper p.button input:hover{
-                                            background: rgb(74, 179, 198);
-                                        }
-                                        #wrapper p.button input:active,
-                                        #wrapper p.button input:focus{
-                                            background: rgb(40, 137, 154);
-                                            position: relative;
-                                            top: 1px;
-                                            border: 1px solid rgb(12, 76, 87);
-                                            box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
-                                        }
-                                    </style>
                                     <!-- Картинка крестика-->
                                     <img class="close" onclick="show('none')" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">
                                     <div id="container">

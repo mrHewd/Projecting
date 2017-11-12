@@ -1,7 +1,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <title>Книжный интернет-магазин</title>
     <body>
         <?php
@@ -54,7 +53,7 @@
         <br>
         <a>
             <div class="getemail-main-left-btn-outer">
-                <button onclick="location.href='http://localhost/BookShop.dev';">Обратно на сайт</button>
+                <button onclick="location.href='http://localhost/vue04.dev';">Обратно на сайт</button>
             </div>
         </a>
     </body>
