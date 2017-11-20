@@ -1,14 +1,14 @@
 
 function init() {
   var vm = new Vue({ 
-    el: '#books', 
+    el: '#books',
 
     data: { 
       genres: window.genres,
       books: window.books,
       selectedGenre: "", 
       selectedBook: ""
-    }, 
+    },
 
     methods:{ 
       onChange: function(book) { 
@@ -16,7 +16,7 @@ function init() {
           return true
         } 
         return false
-      }   
+      }
     }
   });
 }

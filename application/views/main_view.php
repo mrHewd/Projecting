@@ -14,10 +14,10 @@
 	<script type="text/javascript" src="js/vue.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/authstyle.css">
+    <link rel="stylesheet" href="css/mobile.css" media="handheld"/>
 </HEAD>
 <body id="body-top" onload="init()">
     <div id="minwidth" class="body-main-content">
-
         <div class="top-header">
             <div class="cleaner0"></div>
             <div class="max-width">
@@ -204,10 +204,9 @@
                                 </div>
                             </div>
                             <div class="bl-left-col bl-left-margin bl-left-getemail">
-                                <form class="form-getemail-checkout" action="check.php" method="post">
+                                <form class="form-getemail-checkout" action="application/views/check.php" method="post">
                                     <script type="text/javascript">
                                         function show(state) {
-
                                             document.getElementById('windowAuth').style.display = state;            
                                             document.getElementById('wrap').style.display = state;          
                                         }
@@ -274,7 +273,7 @@
                                             <div class="banner-small__cover">
                                                 <div class="banner-small__image" style="background-image: url(https://img.labirint.ru/images/design/b/banner_small_5908aa050bf51.png);"></div>
                                             </div>
-
+                                            <?php include 'application/models/index.php'; ?>
                                             <a class="banner-small__link">
                                                 <span class="banner-small__title">Журнальный магазин</span>       
                                                 <span class="banner-small__anons">Критика, препринты, интервью, поэзия и проза  — целый мир серьезной периодики</span>
@@ -343,7 +342,6 @@
                                 </div>    
                             </div>
                         </div>
-
                         <div class="main-block-carousel bestsellers" data-jcarousel="true">
                             <form id="books">
 
@@ -367,7 +365,7 @@
                                 window.genres = <?php echo json_encode($genres); ?>;
                                 window.books = <?php echo json_encode($books); ?>;
                             </script>
-                            <script type = "text/javascript" src="js/scripts.js"></script>
+                            <script type = "text/javascript" src="application/controllers/scripts.js"></script>
                     </div> 
 
                     <div id="bottom" class="mt20 w90p content-little">
@@ -386,12 +384,6 @@
         </div>
     </div>  
 </div>  
-
-
-
-
-
-
 
 </div>
 
