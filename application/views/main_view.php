@@ -2,6 +2,7 @@
 <html>
 <HEAD>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Книжный интернет-магазин</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
@@ -14,7 +15,7 @@
 	<script type="text/javascript" src="js/vue.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/authstyle.css">
-    <link rel="stylesheet" href="css/mobile.css" media="handheld"/>
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:480px)"/>
 </HEAD>
 <body id="body-top" onload="init()">
     <div id="minwidth" class="body-main-content">
@@ -26,6 +27,7 @@
                      <div class="bl-right">
 
                         <div class="bl-user-menu">
+
                            <div class="basket-block have-dropdown">
                               <a class="basket-block-icon basket-in-cart-a " href="/cart/" data-stype="href" title="Перейти в корзину">
                                  0						</a>
@@ -53,7 +55,8 @@
                                     </div></div>
 
                                 </div>
-                            </div>					</div>
+                            </div>					
+                        </div>
 
 
 
@@ -94,10 +97,10 @@
 
    </div>
 
-   <div class="top-actual ">
+   <div class="top-actual-new">
     <div class="bl-top-actual top-main-menu">
         <div class="max-width bl-inner">
-            <ul class="ul-justify">		
+            <ul class="ul-justy">		
                 <li class="top-main-menu-item have-dropdown have-dropdown-clickable have-dropdown-notouch">
                     <a class="mm-link mm-link-big">Школа</a>
                     <span class="dropdown-link"></span>
@@ -128,9 +131,8 @@
 </div>
 
 <div class="top-margin ">
-
-    <div class="top-content">
-        <div class="index-top-block">
+    <div class="top-content-new">
+        <div class="index-top-block-new">
             <div class="max-width">
                 <ul class="index-top-list ul-justify">
                     <li class="index-top-item">
@@ -252,7 +254,7 @@
 
 
                                 <div class="getemail-main-left-btn-outer">
-                                    <span class="getemail-btn btn btn-small btn-clear-blue" onclick="show('block')">Авторизация</span>
+                                    <span class="btn-clear-red" onclick="show('block')">Авторизация</span>
                                 </div>
                             </form>
 
@@ -264,8 +266,109 @@
                     <div id="right" class="bl-right bl-right-main">
                         <div id="right-inner"><div class="banners">
                             <div class="banner-big fleft radius-5">
-                                <img src="https://img.labirint.ru/images/design/b/banner_59c1208c5ff7a.png" class="fotorama__img" style="width: 460px; height: 460px; left: 0px; top: 0px;">
+                                <ul id="slides">
+                                 <li class="slide showing"><img src="https://img.labirint.ru/images/design/b/banner_59c1208c5ff7a.png" class="fotorama__img" style="width: 460px; height: 460px; left: 0px; top: 0px;"></li>
+                                 <li class="slide"><img src="https://img.labirint.ru/images/design/b/banner_59e5c1c24f567.png" class="fotorama__img" style="width: 460px; height: 460px; left: 0px; top: 0px;"></li>
+                                 <li class="slide"><img src="https://i.imgur.com/CtpT0m9.png" class="fotorama__img" style="width: 460px; height: 460px; left: 0px; top: 0px;"></li>
+                                 <li class="slide"><img src="https://img.labirint.ru/images/actions/action_1504524174_3763.png" style="width: 460px; height: 460px; left: 0px; top: 0px;"></li>
+                                 <li class="slide"><img src="https://img.labirint.ru/images/att/news/1-5562-1464344060-7766.png" class="fotorama__img" style="width: 460px; height: 460px; left: 0px; top: 0px;"></li>
+                                </ul>
+                                <div class="buttons">
+                                <button class="controls" id="previous">&lt;</button>
+                                <button class="controls" id="pause">&#10074;&#10074;</button>
+                                <button class="controls" id="next">&gt;</button>
+                                </div>
                             </div>	
+                            <script type="text/javascript">
+                                var controls = document.querySelectorAll('.controls');
+                                for(var i=0; i<controls.length; i++){
+                                    controls[i].style.display = 'inline-block';
+                                }
+
+                                var slides = document.querySelectorAll('#slides .slide');
+                                var currentSlide = 0;
+                                var slideInterval = setInterval(nextSlide,3000);
+
+                                function nextSlide(){
+                                    goToSlide(currentSlide+1);
+                                }
+
+                                function previousSlide(){
+                                    goToSlide(currentSlide-1);
+                                }
+
+                                function goToSlide(n){
+                                    slides[currentSlide].className = 'slide';
+                                    currentSlide = (n+slides.length)%slides.length;
+                                    slides[currentSlide].className = 'slide showing';
+                                }
+
+                                var playing = true;
+                                var pauseButton = document.getElementById('pause');
+
+                                function pauseSlideshow(){
+                                    pauseButton.innerHTML = '&#9658;'; // кнопка воспроизведения
+                                    playing = false;
+                                    clearInterval(slideInterval);
+                                }
+
+                                function playSlideshow(){
+                                    pauseButton.innerHTML = '&#10074;&#10074;'; // кнопка паузы
+                                    playing = true;
+                                    slideInterval = setInterval(nextSlide,2000);
+                                }
+
+                                pauseButton.onclick = function(){
+                                    if(playing){ pauseSlideshow(); }
+                                    else{ playSlideshow(); }
+                                };
+
+                                var next = document.getElementById('next');
+                                var previous = document.getElementById('previous');
+
+                                next.onclick = function(){
+                                    pauseSlideshow();
+                                    nextSlide();
+                                };
+                                previous.onclick = function(){
+                                    pauseSlideshow();
+                                    previousSlide();
+                                };
+                            </script>
+                            
+                            <script type="text/javascript">
+                                
+                                function Unloader(){
+                                 
+                                    var o = this;
+                                 
+                                    this.unload = function(evt)
+                                    {
+                                        var message = "Вы уверены, что хотите покинуть страницу?";
+                                        if (typeof evt == "undefined") {
+                                            evt = window.event;
+                                        }
+                                        if (evt) {
+                                            evt.returnValue = message;
+                                        }
+                                        return message;
+                                    }
+                                 
+                                    this.init = function()
+                                    {
+                                         
+                                        $(window).on('beforeunload', o.unload);
+                                    }
+                                    this.init();
+                                }
+                                 
+                                $(function(){
+                                    if(typeof window.obUnloader != 'object')
+                                    {
+                                        window.obUnloader = new Unloader();
+                                    }
+                                })
+                            </script>
                             <div class="banners-right">
                                 <div class="banners-small">
                                     <div class="banners-small-wrapper banners-small-wrapper__index">
@@ -273,7 +376,6 @@
                                             <div class="banner-small__cover">
                                                 <div class="banner-small__image" style="background-image: url(https://img.labirint.ru/images/design/b/banner_small_5908aa050bf51.png);"></div>
                                             </div>
-                                            <?php include 'application/models/index.php'; ?>
                                             <a class="banner-small__link">
                                                 <span class="banner-small__title">Журнальный магазин</span>       
                                                 <span class="banner-small__anons">Критика, препринты, интервью, поэзия и проза  — целый мир серьезной периодики</span>
@@ -300,7 +402,7 @@
                                         </div>        
                                     </div>
                                 </div>
-
+                                <?php include 'application/models/index.php'; ?>
                                 <div class="banner-shelf radius-5">
                                     <div>
                                         <span class="banner-shelf__title">Подарки</span>
@@ -366,7 +468,7 @@
                                 window.books = <?php echo json_encode($books); ?>;
                             </script>
                             <script type = "text/javascript" src="application/controllers/scripts.js"></script>
-                    </div> 
+                        </div> 
 
                     <div id="bottom" class="mt20 w90p content-little">
                         <h2>Интернет-магазин книг в деталях</h2>
