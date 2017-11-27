@@ -1,3 +1,113 @@
+                    
+                        .btn-clear-red{
+                            color:#0650c2;
+                            background:transparent;
+                            border:1px solid #0650c2;
+                            font-size: 18px;
+                            line-height: 19px;
+                            padding: 10px 30px;
+                            background: #555;
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 4px 6px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            box-sizing: border-box;
+                            border: 0 none;
+                            cursor: pointer;
+                            color: #fff;
+                            outline: 0;
+                            text-align: center;
+                            text-decoration: inherit;
+                            font-family: PTSans,Helvetica,sans-serif;
+                            -moz-border-radius: 3px;
+                            -webkit-border-radius: 3px;
+                            -o-border-radius: 3px;
+                            border-radius: 3px;
+                            -moz-user-select: none;
+                            font-size:18px;
+                            line-height:19px;
+                            padding:10px 30px
+                        }
+                        @media screen and (max-width:350px) { 
+                            .btn-clear-red{
+                                    overflow: scroll;
+                                    position: fixed;
+                                    top: 20;
+                                    left: 500;
+                                    z-index: 999;
+                                }
+                            }
+                        .ul-justy {
+                            text-align:justify;
+                            line-height:0;
+                            font-size:1px;
+                            text-justify:newspaper;
+                            zoom:1;
+                            text-align-last:justify;
+                        }
+                        .ul-justy:after{
+                            width:100%;
+                            height:0;
+                            visibility:hidden;
+                            overflow:hidden;
+                            content:'';
+                            display:inline-block
+                        }
+                        .ul-justy>li{
+                            display:inline-block;
+                            text-align:left;
+                            line-height:normal;
+                            font-size:10px;
+                            text-align-last:left;
+                            //display:inline;//
+                            zoom:1
+                        }
+                        @media screen and (max-width:350px) { 
+                            .ul-justy>li{
+                                    display: block;
+                                }
+                            }
+                        .top-content-new{
+                            margin-top:-30px
+                        }
+                        @media screen and (max-width:350px) {
+                            .top-content-new{
+                                width: 80%;
+                                padding-left: 190px;
+                                position: relative;
+                                top: -50px;
+                            }
+                        }
+                        .top-actual-new{
+                            background:#fff;
+                            border-bottom:solid 1px #f6f6f6;
+                            border-top:solid 1px #f6f6f6;
+                            font:15px PTSans,Helvetica,sans-serif;
+                            position:absolute;
+                            top:145px;
+                            width:100%;
+                            z-index:50;
+                        }
+                        @media screen and (max-width:350px) {
+                            .top-actual-new{
+                                width:15%;
+                                border-bottom: none;
+                                border-top: none;
+                                padding-left: 10px;
+                            }
+                        }
+                        .index-top-block-new {
+                            background: #FAFAF5;
+                            margin-bottom: 20px;
+                            padding: 30px 0;
+                            overflow: hidden;
+                        }
+                        @media screen and (max-width:350px) {
+                            .index-top-block-new{
+                                margin-bottom: -40px;
+                            }
+                        }
                         .index-top-title {
                             text-align: center;
                         }
@@ -48,3 +158,60 @@
                             background: url(https://img.labirint.ru/design/index-gift.svg) 
                                 no-repeat center center;
                         }
+
+                                #slides{
+                                    position: relative;
+                                    height: 300px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    list-style-type: none;
+                                }
+
+                                .slide{
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 0px;
+                                    width: 100%;
+                                    height: 100%;
+                                    opacity: 0;
+                                    z-index: 1;
+
+                                    -webkit-transition: opacity 1s;
+                                    -moz-transition: opacity 1s;
+                                    -o-transition: opacity 1s;
+                                    transition: opacity 1s;
+                                }
+
+                                .showing{
+                                    opacity: 1;
+                                    z-index: 2;
+                                }
+
+
+                                .controls{
+                                    display: none;
+                                }
+                                .controls{
+                                  background: #333;
+                                  color: #fff;
+                                  border: none;
+                                  padding: 15px 0px;
+                                  font-size: 20px;
+                                  cursor: pointer;
+                                  border: 2px solid #fff;
+                                  margin: 390px 0px 0px 10px;
+                                  width: 70px;
+                                }
+
+                                .controls:hover,
+                                .controls:focus{
+                                  background: #eee;
+                                  color: #333;
+                                }
+                                .buttons{
+                                  position: absolute;
+                                  left: 0px;
+                                  top: 0px;
+                                  z-index: 10;
+                                  font-size: 0px;
+                                }
